@@ -1,0 +1,214 @@
+header{
+display: grid;
+background-color: rgb(55, 95, 71);
+color: goldenrod;
+font-family:'Georgia';
+border-style:double;
+margin-bottom: 2px;
+
+grid-template-columns: 33% 1fr 25%;
+grid-template-rows: 45% auto;
+
+
+
+grid-template-areas:
+    "name name adress"
+    "photo resume resume"
+
+}
+
+header #name{
+    h1 {
+        text-decoration: overline underline;
+    }
+}
+
+header #name {
+    grid-area: name;
+    margin: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color:black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content:space-around;
+
+}
+
+header img {
+    grid-area: photo;
+    display: flex;
+    border-radius: 50px;
+    border-color: goldenrod;
+    border-style:ridge;
+    justify-self:center;
+    align-self:flex-start;
+    
+}
+
+header #two{
+    grid-area: adress;
+    background-color:black;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content:center;
+    text-align: center;
+}
+
+header #resume{
+    grid-area: resume;
+    text-align: center;
+    
+}
+
+.mainbody{
+    display: grid;
+    background-color: rgb(55, 95, 71);
+    font-family:'Georgia';
+    color: goldenrod;
+    margin-bottom: 2px;
+    border-style:ridge;
+    border-color: goldenrod;
+    grid-template-columns:100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "profile";   
+}
+
+.mainbody #competence{
+    grid-area: "profile";
+    text-align: center;
+
+}
+
+.Experience{
+    display: grid;
+    border-style:ridge;
+    font-family:'Georgia';
+    border-color: goldenrod;
+    background-color: rgb(55, 95, 71);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "skills langue"
+    "hobbies hobbies"
+       
+}
+
+.Experience #skills{
+    grid-area: skills;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    background-color: rgb(55, 95, 71);
+    color: goldenrod; 
+}
+#skills > dd {
+   p::before {
+        content: '⚡';
+    }
+}
+
+.Experience #skills1
+{
+ background-color:black;
+ margin:0;
+ border-radius: 10px;
+}
+.Experience #langue{
+    grid-area: langue;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    justify-self:stretch;
+    background-color: rgb(55, 95, 71);
+    color: goldenrod; 
+}
+
+#langue > dd {
+   p::before {
+        content: '⚡';
+    }
+}
+
+.Experience #langue1{
+background-color:black;
+border-radius: 10px; 
+margin: 0px;
+}
+
+.Experience #hobbies{
+    grid-area: hobbies;
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-self:stretch;
+    background-color: rgb(55, 95, 71);
+    color: goldenrod; 
+}
+
+.Experience #hobbies1{
+ background-color:black; 
+ margin: 0;
+ border-radius: 10px;
+}
+
+#hobbies > dd {
+   p::before {
+        content: '⚡';
+    }
+}
+
+
+
+
+#competence > dl > dd {
+
+    p {
+        color: goldenrod;
+    }
+
+    p::before {
+        content: '⚡';
+    }
+
+}
+
+.mainbody #competence1 {
+   display: flex; 
+   margin: 10px;
+   background-color:black;
+   border-radius: 10px; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:space-around;
+
+}
+
+.mainbody #competence2 {
+   display: flex; 
+   margin: 10px;
+   border-radius: 10px;
+   background-color:black; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   
+}
+.mainbody #competence3 {
+   display: flex;
+   margin: 10px;
+   border-radius: 10px;
+   background-color:black; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   
+}
+.material-symbols-outlined{
+    color: goldenrod;
+}
